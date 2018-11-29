@@ -64,10 +64,12 @@ public class ListToBeServed extends AppCompatActivity {
                             public void run() {
                                 try {
                                     String[] parts = finalInputLine.split(";");
-                                    for (int i = 0; i < parts.length; ++i) {
-                                        list.add(parts[i]);
+                                    if(!parts[0].equals("")){
+                                        for (int i = 0; i < parts.length; ++i) {
+                                            list.add(parts[i]);
+                                        }
+                                        adapter.notifyDataSetChanged();
                                     }
-                                    adapter.notifyDataSetChanged();
                                 }catch (Exception e){
                                     e.printStackTrace();
                                 }
