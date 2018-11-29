@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.muratbuldu.pdfshare.ServeOptions">
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Channel Name(default: Presentation)"
+        android:id="@+id/serve_name"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="File Name(default: target1.pdf)"
+        android:id="@+id/file_name"/>
+    <Button
+        android:id="@+id/start_serve"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Serve"/>
+</LinearLayout>
